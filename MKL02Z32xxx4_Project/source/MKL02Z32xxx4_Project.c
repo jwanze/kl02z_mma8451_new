@@ -28,7 +28,15 @@
 
 #define MMA8451_WHO_AM_I_MEMORY_ADDRESS		0x0D
 
+//definicion definicion de bits mas significativos y menos significativos de los ejes XYZ
+#define OUT_X_MSB_AXIS	0x01
+#define OUT_X_LSB_AXIS	0x02
+#define OUT_Y_MSB_AXIS	0x03
+#define OUT_Y_LSB_AXIS	0x04
+#define OUT_Z_MSB_AXIS	0x05
+#define OUT_Z_LSB_AXIS	0x06
 
+#define CTRL_REG1 	0x2A
 
 
 /***************************
