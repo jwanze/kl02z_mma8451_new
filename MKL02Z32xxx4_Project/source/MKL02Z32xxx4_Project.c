@@ -156,6 +156,34 @@ int main(void) {
 
 					break;
 
+				case 'Y':
+				case 'y':
+					i2c0MasterReadByte(&out_y_h, MMA851_I2C_DEVICE_ADDRESS,
+							OUT_Y_MSB_AXIS);
+					i2c0MasterReadByte(&out_y_l, MMA851_I2C_DEVICE_ADDRESS,
+							OUT_Y_LSB_AXIS);
+
+					out_y_h <<= 8;
+					out_y = out_y_h | out_y_l;
+					out_y >>= 2;
+					printf("valor en el eje Y: %d\r\n", out_y);
+
+					break;
+
+				case 'Z':
+				case 'z':
+					i2c0MasterReadByte(&out_z_h, MMA851_I2C_DEVICE_ADDRESS,
+							OUT_Z_MSB_AXIS);
+					i2c0MasterReadByte(&out_z_l, MMA851_I2C_DEVICE_ADDRESS,
+							OUT_Z_LSB_AXIS);
+
+					out_z_h <<= 8;
+					out_z = out_z_h | out_z_l;
+					out_z >>= 2;
+					printf("valor en el eje Z: %d\r\n", out_z);
+
+					break;
+
 				}
     		}else{
     			printf("error\r\n");
