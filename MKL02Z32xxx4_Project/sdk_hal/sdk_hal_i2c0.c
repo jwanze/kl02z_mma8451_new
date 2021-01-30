@@ -70,6 +70,7 @@ status_t i2c0MasterReadByte(uint8_t *data, uint8_t device_address, int8_t memory
     return(kStatus_Success);
 }
 /*--------------------------------------------*/
+
 status_t i2c0MasterWriteByte(uint8_t device_addr, uint8_t reg_addr, uint8_t value){
 
 //	/* subAddress = 0x01, data = g_master_txBuff - write to slave.
