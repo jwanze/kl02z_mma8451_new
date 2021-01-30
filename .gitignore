@@ -9,4 +9,4 @@
 # Excluye carpeta temporal Debug/Release
 /MKL02Z32xxx4_Project/Debug/
 /MKL02Z32xxx4_Project/Release/
-/MKL02Z32xxx4_Project/doc/
+/MKL02Z32xxx4_Project/doc/ 
